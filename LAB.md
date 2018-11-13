@@ -1,5 +1,12 @@
 # List of Vue
 
+
+## Code Wars
+
+* [Kata One](https://www.codewars.com/kata/insert-dashes)
+
+## Lab
+
 Create a vuejs app that displays a list of items and allow user to add new items. You
 get to choose your own domain topic, however take a look at requirements to help
 guide your choice.

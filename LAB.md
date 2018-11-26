@@ -27,7 +27,7 @@ App
 Pick a domain topic of interest. Limited requirements:
 
 * Has at least three properties
-* Conditional rendering based on one of the properties (`v-if`)
+* Find some image sources
 
 ## Functionality
 

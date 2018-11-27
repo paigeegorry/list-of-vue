@@ -1,15 +1,18 @@
 <template>
     <ul>
-        <li>Hello</li>
-        <li><img src="https://www.ftd.com/blog/content/uploads/2018/07/prickly-pear-cactus.jpg"></li>
-        <li>Genus</li>
+        <li v-for="plant in plants"
+            v-bind:key="plant.name">
+            <h3>{{plant.name}}</h3>
+            <h4>{{plant.genus}}</h4>  
+            <img v-bind:src="plant.image">  
+        </li>
     </ul>
 </template>
 
 <script>
 export default {
     props: {
-        cacti: Array
+        plants: Array
     }
 };
 </script>
@@ -18,8 +21,12 @@ export default {
    ul{
        list-style: none;
        text-align: center;
+       display:flex;
+   }
+   h4{
+       font-style: italic;
    }
    img {
-       width: 50%
+       width: 90%;
    }
 </style>

@@ -1,21 +1,21 @@
 <template>
   <div id="app">
-    <List v-bind:cacti="cacti"/>
+    <List v-bind:plants="plants"/>
   </div>
 </template>
 
 <script>
-import List from './components/List.vue';
-import cacti from './cacti.js';
+import List from './components/List';
+import plants from './plants';
 
 export default {
     data() {
         return {
-            cacti
+            plants
         };
     },
     components:{
-        List,
+        List
     }
 };
 </script>

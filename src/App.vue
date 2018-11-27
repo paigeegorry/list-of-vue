@@ -1,13 +1,18 @@
 <template>
   <div id="app">
+    <h1>Cactus Land</h1>
     <List 
       v-bind:plants="plants"
       v-bind:onSelect="handleSelect" />
+    <hr>
+    <Cactus 
+      v-bind:plant="selected" />
   </div>
 </template>
 
 <script>
 import List from './components/List';
+import Cactus from './components/Cactus';
 import plants from './plants';
 
 export default {
@@ -18,11 +23,12 @@ export default {
         };
     },
     components:{
-        List
+        List,
+        Cactus
     },
     methods: {
         handleSelect(plant) {
-            console.log('user selected cactus', plant.name);
+            this.selected = plant;
         }
     }
 
@@ -30,11 +36,17 @@ export default {
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
+  #app {
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #2c3e50;
+    margin-top: 60px;
+  }
+
+  #app h1 {
+    font-size: 50px;
+  }
+
 </style>

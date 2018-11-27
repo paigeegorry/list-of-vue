@@ -3,6 +3,7 @@
     <h1>Cactus Land</h1>
     <List 
       v-bind:plants="plants"
+      v-bind:selected="selected"
       v-bind:onSelect="handleSelect" />
     <hr>
     <Cactus 
@@ -31,7 +32,6 @@ export default {
             this.selected = plant;
         }
     }
-
 };
 </script>
 

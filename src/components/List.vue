@@ -13,7 +13,6 @@
 
 <script>
 export default {
-
     props: {
         plants: Array,
         selected: Object,
@@ -29,9 +28,16 @@ export default {
        display:flex;
        cursor:pointer;
    }
+   
+   .plant.selected {
+       font-size: 1.5em;
+       color: palevioletred;
+   }
+
    h4{
        font-style: italic;
    }
+
    img {
        width: 90%;
    }

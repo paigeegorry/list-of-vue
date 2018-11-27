@@ -1,6 +1,8 @@
 <template>
   <div id="app">
-    <List v-bind:plants="plants"/>
+    <List 
+      v-bind:plants="plants"
+      v-bind:onSelect="handleSelect" />
   </div>
 </template>
 
@@ -11,12 +13,19 @@ import plants from './plants';
 export default {
     data() {
         return {
-            plants
+            plants,
+            selected: null
         };
     },
     components:{
         List
+    },
+    methods: {
+        handleSelect(plant) {
+            console.log('user selected cactus', plant.name);
+        }
     }
+
 };
 </script>
 

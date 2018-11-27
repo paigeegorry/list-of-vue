@@ -1,6 +1,6 @@
 <template>
     <ul>
-        <li>Prickly Pear Cactus</li>
+        <li>Hello</li>
         <li><img src="https://www.ftd.com/blog/content/uploads/2018/07/prickly-pear-cactus.jpg"></li>
         <li>Genus</li>
     </ul>
@@ -8,7 +8,9 @@
 
 <script>
 export default {
-
+    props: {
+        cacti: Array
+    }
 };
 </script>
 

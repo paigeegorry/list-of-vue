@@ -1,13 +1,19 @@
 <template>
   <div id="app">
-    <List />
+    <List v-bind:cacti="cacti"/>
   </div>
 </template>
 
 <script>
 import List from './components/List.vue';
+import cacti from './cacti.js';
 
 export default {
+    data() {
+        return {
+            cacti
+        };
+    },
     components:{
         List,
     }

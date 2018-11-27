@@ -1,4 +1,4 @@
-const data = [
+const cacti = [
     {
         Name: 'Christmas Cactus',
         Image: 'https://www.ftd.com/blog/content/uploads/2018/07/christmas-cactus.jpg',
@@ -20,3 +20,4 @@ const data = [
         Genus: 'Opuntia'
     }
 ];
+export default cacti;
